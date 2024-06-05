@@ -1,0 +1,756 @@
+:root {
+    --nav: #fed6e0;
+    --hover: #7469b6;
+    --btn: #897dcf;
+    --bg: #eeeeee70;
+    --shadow: #EEF7FF;
+    --body: #f7f7f7;
+    --user: #7e8ef1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+
+    /* background-color: var(--hover); */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.navbar {
+    top: 0;
+    left: -170px;
+    right: 0;
+    z-index: 999999999;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Monsterrat", sans-serif;
+}
+
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar .nav-back ul {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.navbar .nav-back ul li {
+    list-style: none;
+    margin: 0 7px;
+}
+
+.navbar .nav-back {
+    box-shadow: 8px 5px 18px rgba(98, 98, 98, 0.22);
+    display: flex;
+    align-items: center;
+    font-family: "Monsterrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 11px;
+    width: 700px;
+    font-size: 18px;
+    border-radius: 0 0 40px 0;
+    background-color: #ffffff;
+}
+
+.navbar .nav a {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar .nav-back ul li a:hover {
+    transition: 0.3s linear;
+    color: var(--hover);
+}
+
+.navbar .nav-back ul li a::after {
+    display: block;
+    padding-bottom: 0.5rem;
+    content: '';
+    transform: scaleX(0);
+    border-bottom: 1px solid var(--hover);
+    transition: 0.4s linear;
+}
+
+.navbar .nav-back ul li a:hover::after {
+    transform: scaleX(0.9);
+}
+
+.navbar .logo {
+    font-size: 25px;
+    color: var(--hover);
+    font-family: "Monsterrat", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    margin-top: -15px;
+
+
+}
+
+.navbar .logo span {
+    color: var(--btn);
+}
+
+
+
+.navbar .hamburgermenu {
+    display: none;
+}
+
+.atasan {
+    font-family: "Monsterrat", sans-serif;
+    display: flex;
+    background: var(--bg);
+    margin: 0 30px;
+    border-radius: 50px;
+    height: 600px;
+
+}
+
+.atasan .paralax {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.atasan .paralax1 {
+    width: 420px;
+    height: auto;
+    margin-left: 190px;
+    margin-top: 220px;
+    z-index: -1;
+}
+
+.atasan .paralax2 {
+    margin-left: 200px;
+    width: 420px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: -500px;
+}
+
+.pembatas {
+    color: var(--bg);
+    background-color: #f7f7f7;
+    width: auto;
+    padding-bottom: 20px;
+}
+
+.atasan .isiatasan {
+    margin-top: 200px;
+    margin-left: 35px;
+}
+
+.atasan .isiatasan h1 {
+    width: 570px;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.atasan .isiatasan p {
+    font-size: 14px;
+    text-align: left;
+    margin-top: 20px;
+    width: 520px;
+}
+
+.atasan .isiatasan h1 span {
+    color: var(--hover);
+}
+
+.atasan .isiatasan .buttom-atasan {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 40px;
+}
+
+.atasan .isiatasan .search-bar {
+    border-radius: 30px 0px 0px 30px;
+    background-color: #ffff;
+    padding: 13px 0;
+    transition: .5s;
+    width: 0;
+    overflow: hidden;
+}
+
+.atasan .isiatasan .buttom-atasan:hover .search-bar {
+    width: 200px;
+}
+
+.atasan .isiatasan .buttom-atasan input {
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.atasan .isiatasan .buttom-atasan a {
+    text-decoration: none;
+    align-items: center;
+    font-family: "Monsterrat", sans-serif;
+    outline: none;
+    font-size: 13px;
+    font-weight: 800;
+    list-style: none;
+    width: 90px;
+    color: #ffff;
+    display: flex;
+    border: none;
+    background-color: var(--hover);
+    padding: 8px;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.button-search {
+    width: 15px;
+}
+
+
+.product .categories {
+    margin: 0 600px;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: "Monsterrat", sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    display: flex;
+    outline: none;
+    border: none;
+    color: white;
+    justify-content: center;
+    background-color: var(--hover);
+}
+
+
+.product h1 {
+    margin-top: 50px;
+    font-family: "Monsterrat", sans-serif;
+    justify-content: center;
+    display: flex;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 60px;
+
+}
+
+.product h1 span {
+    font-weight: 800;
+    margin-top: -7px;
+}
+
+.product .classcollection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.body {
+    flex-direction: column;
+    margin: 0px 10px;
+
+
+}
+
+.product .classcollection .highclass-product {
+    border-radius: 30px;
+    margin-top: 10px;
+    width: 300px;
+    height: 455px;
+    filter: blur(3px);
+
+}
+
+.product .classcollection .highclass-product:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    filter: none;
+
+}
+
+.product .classcollection .highclass-product1 img {
+    width: 330px;
+    height: auto;
+    margin: 5px;
+    border-radius: 30px;
+    filter: blur(3px);
+
+}
+
+.product .classcollection .highclass-product1 img:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    filter: none;
+
+
+}
+
+
+.product .classcollection .highclass-product2 img {
+    width: 330px;
+    height: auto;
+    margin: 5px;
+    border-radius: 30px;
+    filter: blur(3px);
+
+}
+
+.product .classcollection .highclass-product2 img:hover {
+    transform: scale(1.1);
+    transition: .3s;
+    filter: none;
+
+}
+
+
+.release {
+    margin-top: 50px;
+    font-family: "Monsterrat", sans-serif;
+    justify-content: center;
+    display: flex;
+    font-size: 50px;
+    font-weight: 800;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-radius: 60% 60% 0px 0px;
+    background-color: var(--bg);
+}
+
+.body .catalog {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg);
+}
+
+.body .catalog button {
+    border: none;
+    margin-bottom: -15px;
+    width: 170px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    background-color: #8e2de2;
+    padding: 8px;
+    border-radius: 40px;
+
+}
+
+.body .catalog button:hover {
+    transform: scale(1.1);
+    transition: .3s;
+
+
+}
+
+
+
+.body .catalog button a {
+    font-size: 15px;
+    border: none;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    border: none;
+
+}
+
+
+.body .catalog .parfum1 img {
+    width: 150px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.body .catalog .parfum1 .rectangle-cart {
+    color: black;
+    text-decoration: none;
+    margin: 20px 40px;
+    width: 150px;
+}
+
+.body .catalog .parfum1 .cart {
+    display: flex;
+    margin-top: 20px;
+}
+
+.body .catalog .parfum1 .cart p {
+    font-size: 15px;
+    margin-top: -5px;
+    margin-left: 20px;
+
+}
+
+
+.body .catalog .parfum1 {
+    align-items: center;
+    margin: 40px 8px;
+    background-color: #ffff;
+    border-radius: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300, 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    display: flex;
+    justify-content: center;
+    float: right;
+    flex-direction: column;
+}
+
+.body .catalog .parfum1 a p {
+    margin-top: 10px;
+
+}
+
+.body .catalog .parfum1:hover {
+    border: 1px solid black;
+}
+
+
+.pembatasbawah {
+    color: var(--bg);
+    background-color: var(--bg);
+    border-radius: 0px 0px 60% 60%;
+    padding-bottom: 50px;
+
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+
+.review h1 {
+    font-family: "Monsterrat", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+
+.review-box {
+    margin-top: 50px;
+    width: 1000px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.review-box .review-box-card {
+    font-family: "Open Sans", sans-serif;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    flex: none;
+}
+
+.review-box .review-box-card div {
+    font-family: "Monsterrat", sans-serif;
+    text-align: center;
+
+    border-radius: 20px;
+}
+
+.review-box .review-box-card p {
+    font-weight: 600;
+    background-color: white;
+    font-size: 13px;
+    padding: 25px;
+    padding-bottom: 35px;
+    border-radius: 10px;
+
+
+}
+
+.review-box .review-box-card img {
+    margin-top: -30px;
+    width: 80px;
+    height: auto;
+    padding: 10px;
+}
+
+.review-box::-webkit-scrollbar {
+    display: none;
+
+}
+
+
+
+#backbtn,
+#nextbtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+
+.discount {
+    font-family: "Monsterrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    background-image: url(img/discount.png);
+    width: auto;
+    margin: 0 60px;
+    border-radius: 50px;
+    height: 400px;
+}
+
+
+.discount .disc-box {
+    flex-direction: column;
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    text-align: center;
+}
+
+.discount .disc-box a {
+    width: fit-content;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background-color: unset;
+    padding: 10px;
+
+}
+
+
+.discount .disc-box p {
+    margin: 0 50px;
+    color: white;
+    font-size: 15px;
+}
+
+.discount .disc-box h1 {
+    margin-top: 50px;
+    filter: contrast(10);
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    padding: 5px;
+    border-radius: 20px 20px 0px 0;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    justify-content: space-around;
+    background-color: var(--shadow);
+    font-size: 0.8rem;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--btn);
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/* media querys */
+
+@media (min-width:320px) and (max-width:767px) {
+    body {
+        overflow-x: hidden;
+    }
+
+
+    .navbar {
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .navbar .logo {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .navbar .nav-back {
+        border-radius: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar .nav-back ul,
+    .navbar .nav-back a {
+        margin: 0 30px;
+    }
+
+    .navbar .nav-back ul li {
+        display: none;
+    }
+
+    .navbar .nav-back .hamburgermenu {
+        display: flex;
+        margin-bottom: 3px;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .atasan {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+    }
+
+
+    .atasan .isiatasan h1 {
+        width: 350px;
+        font-size: 30px;
+
+    }
+
+    .atasan .isiatasan p {
+        font-size: 10px;
+        width: 250px;
+
+    }
+
+    .atasan .paralax {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .atasan .paralax1 {
+        margin-top: -100px;
+        width: 200px;
+        height: auto;
+
+    }
+
+    .atasan .paralax2 {
+        z-index: -1;
+        margin-top: -250px;
+        width: 200px;
+        height: auto;
+
+    }
+
+    .product .categories {
+        display: none;
+
+    }
+
+    .product h1 {
+        font-size: 20px;
+    }
+
+    .product h1 span {
+        margin-top: -3px;
+    }
+
+
+
+    .product .classcollection .highclass-product {
+        border-radius: 10px;
+        width: 70px;
+        height: auto;
+
+    }
+
+    .product .classcollection .highclass-product1 img {
+        border-radius: 10px;
+
+        width: 100px;
+        height: auto;
+    }
+
+    .product .classcollection .highclass-product2 img {
+        border-radius: 10px;
+        width: 100px;
+        height: auto;
+    }
+
+
+    .release {
+        font-size: 30px;
+    }
+
+    .body .catalog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body .catalog .parfum1 {
+        margin: 20px 80px;
+    }
+
+    .review h1 {
+        font-size: 30px;
+    }
+
+    .review-box {
+        width: 500px;
+    }
+
+    .review-box .review-box-card p {
+        font-size: 5px;
+    }
+
+    .discount {
+        margin: 20px 30px;
+    }
+
+    .discount .disc-box h1 {
+        font-size: 20px;
+    }
+
+    .discount .disc-box p {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+    .discount .disc-box a {
+        margin-top: 20px;
+    }
+
+    .footer {
+        margin-top: 50px;
+        font-size: 10px;
+    }
+}

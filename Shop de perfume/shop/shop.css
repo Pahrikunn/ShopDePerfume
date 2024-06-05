@@ -1,0 +1,318 @@
+:root {
+    --nav: #fed6e0;
+    --hover: #7469b6;
+    --btn: #897dcf;
+    --bg: #eeeeee70;
+    --shadow: #EEF7FF;
+    --body: #f7f7f7;
+    --user: #7e8ef1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.navbar {
+    top: 0;
+    left: -170px;
+    right: 0;
+    z-index: 999999999;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Monsterrat", sans-serif;
+}
+
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar .nav-back ul {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.navbar .nav-back ul li {
+    list-style: none;
+    margin: 0 7px;
+}
+
+.navbar .nav-back {
+    box-shadow: 8px 5px 18px rgba(98, 98, 98, 0.22);
+    display: flex;
+    align-items: center;
+    font-family: "Monsterrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 11px;
+    width: 700px;
+    font-size: 18px;
+    border-radius: 0 0 40px 0;
+    background-color: #ffffff;
+}
+
+.navbar .nav a {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar .nav-back ul li a:hover {
+    transition: 0.3s linear;
+    color: var(--hover);
+}
+
+.navbar .nav-back ul li a::after {
+    display: block;
+    padding-bottom: 0.5rem;
+    content: '';
+    transform: scaleX(0);
+    border-bottom: 1px solid var(--hover);
+    transition: 0.4s linear;
+}
+
+.navbar .nav-back ul li a:hover::after {
+    transform: scaleX(0.9);
+}
+
+.navbar .logo {
+    font-size: 25px;
+    color: var(--hover);
+    font-family: "Monsterrat", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    margin-top: -15px;
+
+
+}
+
+.navbar .logo span {
+    color: var(--btn);
+}
+
+
+.navbar .icon .search .divide {
+    color: var(--hover);
+}
+
+.navbar .icon .search {
+    display: flex;
+    align-items: center;
+    padding: 8px 8px;
+
+}
+
+
+
+
+.cart {
+    font-family: "Monsterrat", sans-serif;
+    margin: 70px 10px;
+    display: flex;
+
+}
+
+.cart img {
+    margin: 0px 50px;
+    width: 350px;
+    height: 380px;
+    border-radius: 10px;
+}
+
+
+.cart .cart-box {
+    display: flex;
+}
+
+.cart .cart-head {
+    width: 290px;
+}
+
+.cart .cart-rate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cart .cart-rate p {
+    color: rgba(0, 0, 0, 0.485);
+    font-size: 13px;
+    margin-top: 1px;
+}
+
+.cart .cart-detail {
+    margin-top: 50px;
+}
+
+.cart-detail h3 {
+    font-size: 15px;
+    border-bottom: 2px solid #7e8ef1;
+    width: 60px;
+}
+
+
+
+.cart-detail p {
+    text-decoration: none;
+    border: none;
+    overflow-y: scroll;
+    height: 140px;
+    margin-top: 20px;
+    font-size: 15px;
+
+}
+
+.cart-detail p::-webkit-scrollbar {
+    display: none;
+}
+
+
+.buy {
+    padding: 15px;
+    margin-left: 17rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #7e8ef1;
+    border-radius: 20px;
+}
+
+.buy input {
+    margin-top: 10px;
+    width: 120px;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    background-color: unset;
+}
+
+.buy-count {
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.buy-count .count-box {
+    border: 1px solid rgba(0, 0, 0, 0.471);
+    padding: 1px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.count-box {
+    border: 1px solid rgba(0, 0, 0, 0.471);
+}
+
+.total h1 {
+    font-size: 20px;
+}
+
+.keranjang {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.keranjang a {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+.keranjang a:hover {
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+/* media querys */
+
+@media (min-width:320px) and (max-width:767px) {
+    body {
+        overflow-x: hidden;
+    }
+
+
+    .navbar {
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .navbar .logo {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .navbar .nav-back {
+        border-radius: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar .nav-back ul,
+    .navbar .nav-back a {
+        margin: 0 30px;
+    }
+
+    .navbar .nav-back ul li {
+        display: none;
+    }
+
+    .navbar .nav-back .hamburgermenu {
+        display: flex;
+        margin-bottom: 3px;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .cart {
+       
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart img {
+        margin-left:10px;
+        justify-content: center;
+        width: 400;
+        height: 430;
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    .cart-head {
+        margin: 0 20px;
+    }
+
+
+    .buy {
+        margin:50px 20px;
+    }
+
+
+}
